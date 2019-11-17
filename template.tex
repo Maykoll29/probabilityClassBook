@@ -493,11 +493,13 @@ La probabilidad es simplemente qué tan posible es que ocurra un evento determin
             rango.dados1(100)
         \end{lstlisting} 
         Para ejecutar este código tenemos en cuenta las aplicaciones de \textbf{apply}, \textbf{table} y se va a ejecutar en 100 pasos y el resultado sera de la siguiente manera.
+        \\
             \centering
-            \includegraphics[width=6cm]{probabilidad condicionada.jpg}\\
+            \includegraphics[scale=0.4]{probabilidad_condicionada.jpeg}\\
             \centering
-            \caption{Figura 1.}
-
+            \caption{Figura 1}\\
+        Ahora vamos a utilizar la siguiente linea de código para calcular los vectores usando las simulaciones.\\
+            
         \begin{lstlisting}
             # segunda forma 
             rango.dados2<- function(n){
@@ -509,6 +511,16 @@ La probabilidad es simplemente qué tan posible es que ocurra un evento determin
               return(b1)
             }
             rango.dados2(100)
+        \end{lstlisting}
+        El código debería ejecutado debería ejecutar lo siguiente:\\
+        
+            \centering
+            \includegraphics[scale=1]{probabilidad_condicionada1.JPG}
+            \centering
+            \caption{Figura 2}
+        \\
+        Y por ultimo la ultima sentencia de código que vamos a utilizar va hacer de la siguiente manera \\
+        \begin{lstlisting}
             # tercera forma
             rango.dados3<-function(n){
               b1<-c()
@@ -518,8 +530,16 @@ La probabilidad es simplemente qué tan posible es que ocurra un evento determin
               return(prob)
             }
             rango.dados3(100)
-        \end{lstlisting}
+        \end{lstlisting}\\
+        Ejecutado debe aparecer los vectores que se evalúan en las posiciones del 1 al 6.\\
         
+        
+            \centering
+            \includegraphics[scale=1]{probabilidad_condicionada2.JPG}\\
+            \centering
+            \caption{Figura 3}
+            
+            
 	\subsection{Exams}
 		\begin{docCommand}{input2}{\brackets{examMC}}
 		        \textbf{Replace \cs{input2} with \cs{input}}\\
