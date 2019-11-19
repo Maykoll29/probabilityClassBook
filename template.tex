@@ -24,6 +24,7 @@
 	\usepackage{longfbox}
 	\usepackage{geometry}
 	\usepackage{marginnote}
+	\usepackage[utf8]{inputenc}
 	\tcbuselibrary{theorems}
 	\tcbuselibrary{breakable, skins}
 	\tcbuselibrary{listings, documentation}
@@ -68,6 +69,7 @@
 % ----- Green ------
 \definecolor{emerald}{rgb}{0.31, 0.78, 0.47}
 \definecolor{darkspringgreen}{rgb}{0.09, 0.45, 0.27}
+\definecolor{DarkGreen}{rgb}{0.09, 0.45, 0.27}
 % ---- White -----
 \definecolor{ghostwhite}{rgb}{0.97, 0.97, 1.0}
 \definecolor{splashedwhite}{rgb}{1.0, 0.99, 1.0}
@@ -387,11 +389,23 @@
 	\end{itemize}
 		\vspace*{1.2\baselineskip}
 	\textbf{glennn.ricol@konradlorenz.edu.co} \vspace{2mm}\\
-	miguela.gomezb@konradlorenz.edu.co \vspace{2mm}\\
-	maykollj.gilm@konradlorenz.edu.co} \\
+	\textbf{miguela.gomezb@konradlorenz.edu.co} \vspace{2mm}\\
+	\textbf{maykollj.gilm@konradlorenz.edu.co}} \\
 	\vfill
 
 \end{titlepage}
+
+%%%% Codigo para que el se vea codigo R%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstset{language=R,
+    basicstyle=\small\ttfamily,
+    stringstyle=\color{DarkGreen},
+    otherkeywords={0,1,2,3,4,5,6,7,8,9},
+    morekeywords={TRUE,FALSE},
+    deletekeywords={data,frame,length,as,character},
+    keywordstyle=\color{blue},
+    commentstyle=\color{DarkGreen},
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \tableofcontents
 \vfill
@@ -446,19 +460,7 @@ The entirety of the contents within this file, and folder, are free for public u
 	\vspace{-1.5mm}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Including and Inputing other Files}
-\vspace{10.5cm}
-	\begin{docCommand}{input}{\brackets{\sl{file-name}}}
-		Imports the commands from filename.tex into the target file; it's equivalent to typing all the commands from filename.tex right into the current file where the \cs{input} line is. 
-	\end{docCommand}
-	\begin{docCommand}{include}{\brackets{\sl{file-name}}}
-		The \cs{include} macro is bigger and is supposed to be used with bigger amounts of content, like chapters, which people might like to compile on their own during the editing process.
-	\end{docCommand}
-\paragraph{}If you would like to get a better understanding on the difference between the \cs{include} vs \cs{input} command, then I would suggest checking out the following website:
-\begin{center}
-\url{https://tex.stackexchange.com/questions/246/when-should-i-use-input-vs-include}    
-\end{center}
-\newpage
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Creating Your Document (Classes)}
 \vspace{10.5cm}
